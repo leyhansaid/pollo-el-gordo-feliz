@@ -1,0 +1,4 @@
+toml[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "build"
