@@ -1,0 +1,133 @@
+{
+  "theme_and_archetype": {
+    "domain": "Restaurant / Local Asadero (Food & Hospitality)",
+    "theme": "LIGHT",
+    "archetype": "Archetype 1: Organic & Earthy (Customized with Mexican warmth)",
+    "rationale": "Patients/Customers need warmth and appetite stimulation. Dark UI feels cold and clinical. We use a clean white base for hygiene and modernity, offset by rich, smoky food colors (Burnt Orange, Paprika Red) and a vibrant Fresh Green for CTAs (WhatsApp/Phone) to signal 'Go/Easy'."
+  },
+  "colors": {
+    "background": {
+      "default": "#FAFAFA",
+      "surface": "#FFFFFF",
+      "surface_muted": "#F5F5F4"
+    },
+    "text": {
+      "primary": "#1C1917",
+      "secondary": "#57534E",
+      "inverse": "#FFFFFF"
+    },
+    "brand": {
+      "primary": "#D32F2F",
+      "primary_hover": "#B71C1C",
+      "secondary": "#D85C27",
+      "whatsapp_green": "#25D366",
+      "whatsapp_green_hover": "#1EBA57"
+    },
+    "borders": {
+      "default": "#E7E5E4",
+      "focus": "#D32F2F"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Playfair Display', serif",
+      "body": "'Manrope', sans-serif"
+    },
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1]",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-snug",
+      "h3": "text-2xl sm:text-3xl tracking-tight leading-snug",
+      "h4": "text-xl font-bold",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm leading-normal",
+      "overline": "text-xs tracking-[0.2em] uppercase font-bold text-brand-secondary"
+    },
+    "rules": "Never use Inter. Headings use Playfair Display for an authentic, premium, traditional feel. Body uses Manrope for crystal clear mobile readability. Apply 'tracking-tight' to all headings above 32px."
+  },
+  "spacing_and_layout": {
+    "system": "Tailwind standard (p-4, p-6, p-8, p-12). Generous padding for breathing room.",
+    "mobile_first": "Crucial. 90% traffic is mobile. Ensure touch targets are at least 48px high. Stack columns vertically on mobile (grid-cols-1) and expand to grid-cols-2 or grid-cols-3 on md/lg.",
+    "hero_strategy": "Mobile: Image at top with a soft gradient fade into the white background, text layered below or overlapping. Desktop: 50/50 split (Text left, large Image right) OR full-width cinematic image with bg-black/40 overlay. For this authentic feel, use the Full-Width Cinematic Hero with overlaid text.",
+    "section_padding": "py-16 md:py-24",
+    "card_padding": "p-6 md:p-8"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#25D366] text-white hover:bg-[#1EBA57] rounded-full px-8 py-4 font-bold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2",
+      "secondary": "bg-white text-[#1C1917] border-2 border-[#1C1917] hover:bg-[#1C1917] hover:text-white rounded-full px-8 py-4 font-bold transition-all flex items-center justify-center gap-2"
+    },
+    "cards": {
+      "menu_item": "bg-white rounded-2xl overflow-hidden border border-[#E7E5E4] shadow-sm hover:shadow-md transition-shadow duration-300",
+      "testimonial": "bg-[#F5F5F4] rounded-2xl p-6 relative"
+    },
+    "floating_whatsapp": {
+      "wrapper": "fixed bottom-6 right-6 z-50",
+      "button": "bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform duration-300"
+    },
+    "navigation": {
+      "wrapper": "fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/90 border-b border-[#E7E5E4] transition-all"
+    }
+  },
+  "media": {
+    "images": {
+      "hero_grill": {
+        "url": "https://images.unsplash.com/photo-1627947063935-55577ec3c2e1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxncmlsbGVkJTIwY2hpY2tlbiUyMG9uJTIwZ3JpbGwlMjBzbW9rZXxlbnwwfHx8fDE3ODI0MTkzNzR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "High-quality shot of chicken cooking on a smoking grill. Use as Hero background with a dark overlay (bg-black/50) so the white Playfair Display text is legible."
+      },
+      "menu_grilled_chicken": {
+        "url": "https://images.unsplash.com/photo-1606728789023-ca3de19c1285?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxncmlsbGVkJTIwY2hpY2tlbiUyMG9uJTIwZ3JpbGwlMjBzbW9rZXxlbnwwfHx8fDE3ODI0MTkzNzR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Grilled chicken combo. Use in Menu Highlights card 1."
+      },
+      "menu_fried_chicken": {
+        "url": "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxjcmlzcHklMjBmcmllZCUyMGNoaWNrZW58ZW58MHx8fHwxNzgyNDE5Mzc0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Crispy fried chicken. Use in Menu Highlights card 2."
+      },
+      "menu_tacos": {
+        "url": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxjYXJuZSUyMGFzYWRhJTIwdGFjb3N8ZW58ZW58MHx8fHwxNzgyNDE5Mzc0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Authentic Carne Asada tacos. Use in Menu Highlights card 3."
+      }
+    }
+  },
+  "icons": {
+    "library": "@phosphor-icons/react",
+    "usage": "Use Phosphor Icons (weight: 'fill' for stars/socials, 'regular' for UI elements). Required icons: WhatsappLogo, PhoneCall, Star, MapPin, Clock, Fire, ForkKnife."
+  },
+  "specific_sections": {
+    "hero": {
+      "h1": "El auténtico sabor de la parrilla en Guadalupe",
+      "rating": "⭐⭐⭐⭐⭐ 500+ Reseñas Locales",
+      "cta_primary": "Pedir en Línea / WhatsApp",
+      "cta_secondary": "Llamar 81 4001 5200"
+    },
+    "value_proposition": {
+      "layout": "3 columns (grid-cols-1 md:grid-cols-3)",
+      "items": ["Sabor Tradicional a la Parrilla", "Variedad para Todos", "Precios que te Hacen Sonreír"]
+    },
+    "menu_highlights": {
+      "layout": "3 cards (grid-cols-1 md:grid-cols-3)",
+      "cta": "Ver Menú Completo y Ordenar (Centered below grid)"
+    },
+    "testimonials": {
+      "layout": "Horizontal scroll on mobile, 3-column grid on desktop.",
+      "content": "Must include 5 stars (Burnt Orange color) and mention local customers like 'Mary Guzmán'."
+    },
+    "footer_and_contact": {
+      "layout": "2 columns. Left: Contact info (Address, Phone, Hours). Right: Google Maps Embed.",
+      "interactive": "Phone numbers must use 'tel:' links. Address should link to Google Maps directions."
+    }
+  },
+  "accessibility_and_testing": {
+    "testing": "All interactive elements (buttons, links, form inputs if any) MUST have a 'data-testid' attribute (e.g., data-testid='hero-whatsapp-btn').",
+    "a11y": "Ensure proper aria-labels on icon-only buttons (like the floating WhatsApp button). Maintain high contrast for text over images."
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: `yarn add @phosphor-icons/react`",
+    "Update Tailwind config to include the brand colors and typography defined above.",
+    "Add Google Fonts imports for 'Playfair Display' and 'Manrope' to index.css.",
+    "Build the page mobile-first. Ensure all buttons are highly tappable.",
+    "Use the exact image URLs provided in the media section. Do not use placeholders.",
+    "Ensure the floating WhatsApp button stays fixed at the bottom right and has a pulsing or bouncing animation to draw attention.",
+    "Create the sticky navigation bar using Glassmorphism as described in components.navigation.",
+    "Implement the full-width Hero with a background image, a dark overlay for text readability, and the two CTAs clearly visible."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "Frontend-only test for Asadero El Gordo Feliz landing page. All 6 sections render, all interactive links (wa.me, tel:, Google Maps) have correct hrefs, navbar shows glassmorphism on scroll, floating WhatsApp transitions from hidden to visible after scrolling >280px, mobile hamburger menu opens with nav links. Tested both desktop (1440x900) and mobile (390x844) viewports. 32 checks passed, 5 minor failures (only outer section-wrapper data-testids missing — inner content/links all verified).",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "home-page loaded on desktop and mobile",
+    "Hero H1 contains 'El auténtico sabor de la parrilla en Guadalupe'",
+    "hero-whatsapp-btn href = wa.me/528140015200 with encoded message",
+    "hero-call-btn = tel:+528140015200",
+    "5 rating stars/SVGs present in hero",
+    "All 4 nav links present with correct anchors (inicio, menú→#menu, reseñas→#testimonios, ubicación→#ubicacion)",
+    "navbar-whatsapp-btn 'Pedir ahora' points to wa.me/528140015200",
+    "Navbar becomes glassmorphism (bg-white/85 + backdrop-blur) after scroll >24px",
+    "Floating WhatsApp opacity-0 initially, opacity-100 after scroll >280px",
+    "All 3 menu cards present with -order WhatsApp links",
+    "menu-full-cta points to wa.me",
+    "All 3 testimonial cards present",
+    "contact-address-link → google.com/maps directions",
+    "contact-phone-link = tel:+528140015200",
+    "contact-whatsapp-btn → wa.me/528140015200",
+    "contact-directions-btn → google.com/maps",
+    "contact-map iframe present",
+    "Footer contains business name and copyright year",
+    "Mobile (390w): hamburger toggle visible, opens mobile menu sheet with nav links + WhatsApp CTA"
+  ],
+  "failed": [
+    {"area": "data-testid coverage", "issue": "Outer section wrappers (hero, value-prop, menu-highlights, testimonials, contact) lack data-testid attributes on the <section> elements themselves. All inner testids work correctly though.", "evidence": "page.query_selector('[data-testid=\"hero\"]') returned null for hero/value-prop/menu-highlights/testimonials/contact wrappers — but inner elements (hero-whatsapp-btn, menu-card-0, testimonial-card-0, contact-map) all found and functional.", "priority": "LOW"}
+  ],
+  "action_items": [
+    "OPTIONAL (low priority): Add data-testid on outer <section> tags (hero, value-prop, menu-highlights, testimonials, contact) for easier section-level targeting in future tests. Not blocking — all functional elements and interactions are verified working."
+  ],
+  "success_rate": {"backend": "skipped", "frontend": "86% (32/37 checks; 5 minor missing-testid items, no functional issues)"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
